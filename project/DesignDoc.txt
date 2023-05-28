@@ -1,0 +1,10 @@
+function output():
+	-Update the HTML to reflect the current variable values
+function action(sword/bow/wand/next):
+	-When an attack icon is clicked, give a corresponding param
+	-deduct attack power from foe HP
+function animate():
+	-Animate simple fade effect for battle pic when doing actions
+	-More info here: https://leewc.com/articles/javascript-fade-in-out-callback/
+
+*Have a variable that tracks battlepic's opacity and augments it by a small amount every step

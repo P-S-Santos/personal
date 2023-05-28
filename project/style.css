@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+/* COLORS */
+:root {
+    --white: #FFF7EB;
+    --red: #FF5E5B;
+    --black: #605464 ;
+}
+
+/*BG AND FONT*/
+p, h1, nav{
+    font-family: "Darumadrop One", Arial, sans-serif;
+}
+h1{
+    font-size: 2em;
+    line-height: .5em;
+}
+p{
+  font-size: 1.5em;  
+  line-height: .5em;
+}
+header, footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+main {
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+}
+
+/*HEADER FOOTER*/
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3em;
+}
+nav {
+    grid-column: 3/4;
+    display: flex;
+    justify-content: right;
+}
+nav a {
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px;
+    padding-top: .7em;
+}
+nav a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+header h1{
+    grid-column: 1/2;
+    margin-top: .4em;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    font-size: 1em;
+}
+
+/*MAIN*/
+main, footer{
+    display:flex;
+    flex-direction: column;
+}
+#battlepic{
+    height: 20vw;
+}
+#next{
+    display: none;
+}
+#bottom img{
+    height: 8vw;
+}
+#bottom img:hover{
+    opacity: .6;
+}
